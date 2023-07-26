@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
      public float speed;
      public float jumpForce;
 
-     public GameObject shoot;
+     public GameObject kunai;
      public Transform firePoint;
      
      private bool isJumping;
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         Jump();
-        ShootFire();
+        KunaiFire();
     }
 
     private void FixedUpdate()
@@ -105,7 +105,7 @@ public class Player : MonoBehaviour
         
     }
 
-     void ShootFire()
+     void KunaiFire()
      {
          StartCoroutine ("Fire");
      }
@@ -116,16 +116,16 @@ public class Player : MonoBehaviour
          {
              isFire = true;
              anim.SetInteger("transition", 3);
-             GameObject Shoot = Instantiate(shoot, firePoint.position, firePoint.rotation);
+             GameObject Kunai = Instantiate(kunai, firePoint.position, firePoint.rotation);
 
              if (transform.rotation.y == 0)
              {
-                 Shoot.GetComponent<Shoot>().isRight = true;
+                 Kunai.GetComponent<kunai>().isRight = true;
              }
 
              if (transform.rotation.y == 180)
              {
-                 Shoot.GetComponent<Shoot>().isRight = false;
+                 Kunai.GetComponent<kunai>().isRight = false;
              }
              yield return new WaitForSeconds(0.2f);
              anim.SetInteger("transition", 0);
