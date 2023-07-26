@@ -2179,6 +2179,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2221,7 +2222,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10.6
+  orthographic size: 9.158931
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2245,13 +2246,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 126.4, y: -1.2, z: -10}
-  m_LocalScale: {x: 657.2938, y: 583.34827, z: 657.2938}
+  m_LocalPosition: {x: -82.29, y: -1.84, z: -10}
+  m_LocalScale: {x: 546.9079, y: 485.38074, z: 546.9079}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24852401da62f0343a57d63e2bc15b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Player
+  smoothSpeed: 0.125
+  minX: 0
+  maxX: 288.54
 --- !u!1 &542237663
 GameObject:
   m_ObjectHideFlags: 0
@@ -15941,9 +15958,10 @@ GameObject:
   - component: {fileID: 1156625601}
   - component: {fileID: 1156625600}
   - component: {fileID: 1156625604}
+  - component: {fileID: 1156625605}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15968,7 +15986,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1156625601
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16082,6 +16100,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1156625605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156625599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36827ed2c7e33304eae854180bd739b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 3
+  speed: 15
+  jumpForce: 6
+  shoot: {fileID: 0}
+  firePoint: {fileID: 0}
 --- !u!1 &1160998048
 GameObject:
   m_ObjectHideFlags: 0
