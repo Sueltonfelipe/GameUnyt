@@ -4,7 +4,7 @@ public class CameraFollow : MonoBehaviour
 {
     public string targetTag = "Player"; // Tag do objeto que a câmera deve seguir
     public float smoothSpeed = 0.125f; // Velocidade de suavização do movimento da câmera
-    public float minX = 0f; // Valor mínimo de posição x
+    public float minX = -83.31f; // Valor mínimo de posição x
     public float maxX = 288.54f; // Valor máximo de posição x
 
     private Transform target; // Referência ao transform do objeto que a câmera deve seguir
