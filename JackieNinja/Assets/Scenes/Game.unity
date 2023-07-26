@@ -2335,8 +2335,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTag: Player
   smoothSpeed: 0.125
-  minX: 0
-  maxX: 288.54
+  minX: -83.31
+  maxX: 328
 --- !u!1 &542237663
 GameObject:
   m_ObjectHideFlags: 0
@@ -16197,7 +16197,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3
@@ -16333,7 +16333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 3
   speed: 15
-  jumpForce: 10
+  jumpForce: 6
   shoot: {fileID: 0}
   firePoint: {fileID: 0}
 --- !u!1 &1160998048
@@ -18306,7 +18306,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 200.6}
+  m_AnchoredPosition: {x: 22, y: 272}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1623553629
@@ -18470,7 +18470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -42.999947, y: 188.99995}
+  m_AnchoredPosition: {x: -24, y: 259}
   m_SizeDelta: {x: 26.8714, y: 30.0055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1629237610
